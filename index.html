@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealDB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="files/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="search_container">
+      <div id="mealDetailsBody" class="card display_card my-3 mx-auto"></div>
+      <section
+        style="height: 120px"
+        class="my-5 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h3 class="fs-1 heading">Search Your Food</h3>
+        <div class="input-group mb-3 w-50 mx-auto">
+          <input
+            id="search-field"
+            type="text"
+            class="form-control"
+            placeholder="Food Name..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            onclick="searchMeals()"
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Search
+          </button>
+        </div>
+      </section>
+      <section class="container">
+        <div
+          id="meals-container"
+          class="row row-cols-1 row-cols-md-3 g-4"
+        ></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="files/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+.btn {
+  background-color: #0c97b3 !important;
+  color: white !important;
+}
+.heading{
+    color: #0c97b3;
+}
+.display_card{
+  width: 30%;
+  height: 300px;
+}
